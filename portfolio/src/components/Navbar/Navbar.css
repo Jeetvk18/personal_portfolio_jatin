@@ -1,0 +1,133 @@
+/*================ NAVBAR ================*/
+
+.header{
+
+    position:fixed;
+
+    left:50%;
+
+    bottom:25px;
+
+    transform:translateX(-50%);
+
+    z-index:1000;
+
+}
+
+.nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    padding:8px;
+
+    background:rgba(17,24,39,.78);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:999px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.30);
+
+}
+
+/*========== LINKS ==========*/
+
+.nav a{
+
+    height:40px;
+
+    padding:0 18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:999px;
+
+    color:#CBD5E1;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+/*========== HOME ICON ==========*/
+
+.nav a:first-child{
+
+    width:40px;
+
+    padding:0;
+
+    font-size:18px;
+
+}
+
+/*========== HOVER ==========*/
+
+.nav a:hover{
+
+    color:#fff;
+
+    background:rgba(139,92,246,.15);
+
+}
+
+/*========== ACTIVE ==========*/
+
+.nav a.active{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-hover)
+    );
+
+    color:#fff;
+
+}
+
+/*========== MOBILE ==========*/
+
+@media(max-width:768px){
+
+.nav{
+
+padding:6px;
+
+gap:4px;
+
+}
+
+.nav a{
+
+height:36px;
+
+padding:0 12px;
+
+font-size:12px;
+
+}
+
+.nav a:first-child{
+
+width:36px;
+
+font-size:16px;
+
+}
+
+}

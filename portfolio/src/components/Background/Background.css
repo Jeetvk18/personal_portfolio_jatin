@@ -1,0 +1,53 @@
+.background{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    z-index:-1;
+    pointer-events:none;
+}
+
+.gradient{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(140px);
+    opacity:.28;
+    animation:move 18s ease-in-out infinite alternate;
+}
+
+.one{
+    width:520px;
+    height:520px;
+    background:#8B5CF6;
+    top:-120px;
+    left:-120px;
+}
+
+.two{
+    width:420px;
+    height:420px;
+    background:#3B82F6;
+    right:-80px;
+    bottom:-120px;
+    animation-duration:22s;
+}
+
+.three{
+    width:340px;
+    height:340px;
+    background:#EC4899;
+    top:45%;
+    left:45%;
+    animation-duration:25s;
+}
+
+@keyframes move{
+
+0%{
+transform:translate(0,0) scale(1);
+}
+
+100%{
+transform:translate(120px,-90px) scale(1.25);
+}
+
+}
