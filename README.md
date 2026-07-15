@@ -9,7 +9,7 @@ A modern and fully responsive Full Stack Developer Portfolio built with **React.
 
 ## 📸 Preview
 
-![Portfolio Preview](./public/preview.png)
+![Portfolio Preview](./public/profile.png)
 
 > *(Replace `preview.png` with a screenshot of your portfolio homepage.)*
 
