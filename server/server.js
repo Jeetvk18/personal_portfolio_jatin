@@ -14,7 +14,11 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://personal-portfolio-jatin.vercel.app",
+  })
+);
 app.use(express.json());
 
 app.use("/api/contact", contactRoutes);

@@ -37,7 +37,7 @@ function Contact() {
     try{
 
       const res = await axios.post(
-        "http://localhost:5000/api/contact",
+        "https://personal-portfolio-jatin.onrender.com/api/contact",
         formData
       );
 
